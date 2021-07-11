@@ -26,7 +26,7 @@ function restar() {
 	valNum2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	total = valNum1 - valNum2;
 
-	alert("El resultado de la suma es " + total);
+	alert("El resultado de la resta es " + total);
 }
 
 function multiplicar() {
@@ -38,7 +38,7 @@ function multiplicar() {
 	valNum2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	total = valNum1 * valNum2;
 
-	alert("El resultado de la suma es " + total);
+	alert("El resultado de la multiplicacion es " + total);
 }
 
 function dividir() {
@@ -50,6 +50,6 @@ function dividir() {
 	valNum2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	total = valNum1 / valNum2;
 
-	alert("El resultado de la suma es " + total);
+	alert("El resultado de la division es " + total);
 }
 
