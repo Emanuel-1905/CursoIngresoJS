@@ -8,7 +8,7 @@ function mostrarAumento() {
 	let descuento;
 	let resultado;
 
-	importe = parseFloat(document.getElementById("txtIdImporte").value;
+	importe = parseFloat(document.getElementById("txtIdImporte").value ;
 
 	descuento = importe * 0.25;
 
