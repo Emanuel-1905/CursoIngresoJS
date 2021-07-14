@@ -22,6 +22,13 @@ function Rectangulo ()
 }
 function Circulo () 
 {
+    let perimetro;
+    let radio;
+    let alambre;
+    cons PI
+
+
+    perimetro = parseInt(document.getElementById("txtId"))
 	
 }
 function Materiales () 
