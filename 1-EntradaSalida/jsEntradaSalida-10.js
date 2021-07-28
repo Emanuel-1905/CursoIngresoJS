@@ -10,7 +10,7 @@ function mostrarAumento() {
 
 	importe = parseFloat(document.getElementById("txtIdImporte").value);
 
-	descuento = importe * 25 / 100;
+	descuento = importe * .25;
 
 	resultado = importe - descuento;
 

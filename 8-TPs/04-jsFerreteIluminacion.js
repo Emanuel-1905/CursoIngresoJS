@@ -18,8 +18,11 @@ function CalcularPrecio ()
 
     //2- levantar los datos (cantidad, marca)
 
+    precio = parseInt(document.getElementById("txtIdPrecio").value);
     cantidad = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
+    porcDescuento = parseInt(document.getElementById("txtIdPorcDescuento").value);
+    impuesto = parseInt(document.getElementById("txtIdImpuesto").value);
     
     switch (cantidad){
         case 1:
@@ -56,23 +59,7 @@ function CalcularPrecio ()
 
     //Fin del switch
 
-            }
+        
 
-    //3- de acuerdo a la cantidad comprada y a la marca, calculo el porc de descuento
-    
-
+        }
     }
-
-
-    // estrategia de resolucion
-    // 1- Declaro variables
-    //1.1 precio/cantidad/marca/porDescuento/impuestoFinal/IIBB
-    //2- levantar los datos (cantidad, marca)
-    //3- de acuerdo a la cantidad comprada y a la marca, calculo el porc de descuento
-    //4- una vez que tengo el % de descuento, calculo el precio de una lampara con el desc.
-    //5- escribo en la caja de texto inferior el precio unit de la lampara
-    //6- calculo el importe final(precio de la lampara con descuento * la cantidad de lamparas)
-    //7- me fijo si corresponde calcular el impuesto, y de ser asi, lo calculo
-    //8- muestro el importe final y de corresponder el impuesto
-    
-
