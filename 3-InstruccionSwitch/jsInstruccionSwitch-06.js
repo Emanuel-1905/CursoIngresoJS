@@ -22,7 +22,7 @@ function mostrar()
 		case 18:
 		case 19:
 			alert("Es de tarde");
-			break;
+			break; 
 
 		case 20:
 		case 21:

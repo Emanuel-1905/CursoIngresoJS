@@ -4,10 +4,10 @@ Al presionar el botón pedir un sexo
 function mostrar()
 {
 	let sexo;
-	sexo = prompt("ingrese f ó m .");
+	sexo = prompt("ingrese f ó m.");
     
 	while (!(sexo == "f" || sexo == "m")){
-        sexo = prompt("valor incorrecto. Ingrese f o m");
+        sexo = prompt("Valor incorrecto. Ingrese f o m");
 	}
 
     document.getElementById("txtIdSexo").value = sexo;

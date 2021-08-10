@@ -13,6 +13,6 @@ function mostrar()
 		numero = parseInt(prompt("Ingrese un numero valido: "));
 	}
 
-    document.getElementById("txtIdNumero").value = numero
+    document.getElementById("txtIdNumero").value = numero;
 	
 }//FIN DE LA FUNCIÓN

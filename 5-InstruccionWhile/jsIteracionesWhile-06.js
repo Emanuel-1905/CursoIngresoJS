@@ -4,20 +4,22 @@ function mostrar()
 	let acumulador = 0;
 	let numero;
 	let promedio;
+	
 
 	while(contador < 5){
 
 		numero = parseInt(prompt("Ingrese un numero: "));
 		while (isNaN(numero)){
-			numero = parseInt(prompt("Eso no es un numero. Ingrese nuevamente un numero"))//ojo esto. que este!
+			numero = parseInt(prompt("Eso no es un numero Ingrese numero: "));
 		}
+		
 
-		acumulador = acumulador + numero;
-		contador = contador ++;
+		acumulador += numero;
+		contador++ ;
 
 	}
 
-	promedio = acumulador / 5;
+	promedio = acumulador / contador;
 
 
 	document.getElementById("txtIdSuma").value = acumulador;

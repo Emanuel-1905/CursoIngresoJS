@@ -1,69 +1,48 @@
-function mostrar() {
+function mostrar () 
+{
 	let precioBase = 15000;
-	let precioTotal;
 	let estacion;
 	let destino;
 
 	estacion = document.getElementById("txtIdEstacion").value;
 	destino = document.getElementById("txtIdDestino").value;
 
-	switch (estacion) {
-
+	switch (estacion){
 		case "Invierno":
-			switch (destino) {
-				case "Bariloche":
-					precioTotal = ((precioBase * 20) / 100) + precioBase;
-					alert("El precio total es: $" + precioTotal);
-					break;
-				case "Cataratas":
-				case "Cordoba":
-					precioTotal = precioBase - ((precioBase * 10) / 100);
-					alert("El precio total es: $" + precioTotal);
-					break;
-				case "Mar del plata":
-					precioTotal = precioBase - ((precioBase * 20) / 100);
-					alert("El precio total es: $" + precioTotal);
-					break;
+			if ( destino == "Bariloche" ){
+				alert ("El precio final es de: " + precioBase * 1.2);
 			}
-
-			break;
+			else if ( destino == "Cataratas" || destino == "Cordoba" ) {
+				alert ("El precio final es de: " + precioBase * 1.2);
+			}
+			else ( destino == "Mar del Plata" ) {
+				alert ("El precio final es de: " + precioBase * .9);
+			}
+			
 
 		case "Verano":
-			switch (destino) {
-				case "Bariloche":
-					precioTotal = precioBase - ((precioBase * 20) / 100);
-					alert("El precio total es: $" + precioTotal);
-					break;
-				case "Cataratas":
-				case "Cordoba":
-					precioTotal = ((precioBase * 10) / 100) + precioBase;
-					alert("El precio total es: $" + precioTotal);
-					break;
-				case "Mar del plata":
-					precioTotal = ((precioBase * 20) / 100) + precioBase;
-					alert("El precio total es: $" + precioTotal);
-					break;
+			if ( destino == "Bariloche"){
+				alert ("El precio final es de: " + precioBase * .8);
 			}
-
+			else if ( destino == "Cataratas" || destino == "Cordoba" ){
+				alert ("El precio final es de: " + precioBase * .9);
+			}
+			else ( destino == "Mar del Plata") {
+				alert ("El precio final es de: " + precioBase * 1.2);
+			}
 			break;
 
-		case "Otoño":
+		case "Otonio":
 		case "Primavera":
-			switch (destino) {
-				case "Bariloche":
-				case "Mar del plata":
-				case "Cataratas":
-					precioTotal = ((precioBase * 10) / 100) + precioBase;
-					alert("El precio total es: $" + precioTotal);
-					break;
-				case "Cordoba":
-					precioTotal = precioBase
-					alert("El precio total es: $" + precioTotal);
-					break;
+			if ( destino == "Bariloche" || destino == "Cataratas" || destino == "Mar del Plata"){
+				alert ("El precio final es de: " + precioBase * 1.1);
 			}
-
+			else if ( destino == "Cordoba") {
+				alert ("El precio final es de: " + precioBase);
+			}
 			break;
-
 	}
+	    
+
 
 }
